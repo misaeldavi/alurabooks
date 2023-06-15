@@ -1,0 +1,15 @@
+.container-sobre {
+    width: 100%;
+}
+
+
+.titulo-sobre {
+    color: #002F52;
+    padding: 10px;
+    border-bottom: 2px solid #EB9B00;
+    width: 200px;
+}
+
+.corpo-sobre {
+    color: black;
+}

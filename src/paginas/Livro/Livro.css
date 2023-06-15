@@ -1,0 +1,35 @@
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.container-detalhe {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 70%;
+    padding-inline: 10%;
+}
+
+.detalhes {
+    justify-content: space-between;
+    padding-inline: 5%;
+}
+
+.imagem-livro {
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcoes {
+    display: flex;
+}
+
+.qtdContainer {
+    padding: 20px;
+}
