@@ -1,4 +1,4 @@
-import { AbGrupoOpcao, AbGrupoOpcoes, AbInputQuantidade, AbBotao } from "ds-alurabooks"
+import { AbGrupoOpcao, AbGrupoOpcoes, AbInputQuantidade, AbBotao, AbTag } from "ds-alurabooks"
 import TituloPrincipal from '../../componentes/TituloPrincipal'
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
@@ -63,7 +63,7 @@ const Livro = () => {
                         <p><strong>*Você terá acessso às futuras atualizações do livro.</strong></p>
                         <footer>
                             <div className="qtdContainer">
-                                <AbInputQuantidade 
+                                <AbInputQuantidade
                                     onChange={() => setOpcao}
                                     value={1}
                                 />
@@ -78,7 +78,9 @@ const Livro = () => {
                     <SobreAutor autorId={livro.autor} />
                     <BlocoSobre titulo='Sobre o Livro' corpo={livro.sobre} />
                 </div>
-
+                <div className="tags">
+                    {livro?.tags?.map(tag => <AbTag contexto="secundario" key={tag.nome} texto={tag.nome} />)}
+                </div>
             </div>
         </div>
     </section>

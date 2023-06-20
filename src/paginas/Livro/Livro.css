@@ -33,3 +33,9 @@
 .qtdContainer {
     padding: 20px;
 }
+
+.tags {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+}
